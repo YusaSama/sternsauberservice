@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum - Stern Sauber Service GmbH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e88e5;      /* Changed to blue */
+            --primary-dark: #1565c0;  /* Changed to darker blue */
+            --secondary: #f5f9ff;     /* Changed to light blue */
+            --text: #2c3e50;
+            --spacing: 2rem;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--secondary);
+            color: var(--text);
+            line-height: 1.8;
+            padding-top: 80px;
+        }
+
+        .nav-bar {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .back-button {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+
+        .back-button:hover {
+            transform: translateX(-5px);
+        }
+
+        .back-button::before {
+            content: "←";
+            margin-right: 8px;
+            font-size: 1.2em;
+        }
+
+        .impressum {
+            background: white;
+            padding: calc(var(--spacing) * 1.5);
+            max-width: 800px;
+            margin: 2rem auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .impressum h1 {
+            color: var(--primary);
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .impressum-section {
+            margin-bottom: 2rem;
+        }
+
+        .impressum-section h2 {
+            color: var(--primary-dark);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 0.5rem;
+        }
+
+        .impressum-section p {
+            margin: 0.5rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .impressum {
+                margin: 1rem;
+                padding: 1rem;
+            }
+        }
+
+        .impressum-link {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin: 0 0.5rem;
+        }
+
+        .impressum-link:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        footer p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="website" class="back-button">Zurück zur Homepage</a>
+        <span style="color: white;">Impressum</span>
+    </div>
+    
+    <div class="impressum">
+        <h1>Impressum</h1>
+        
+        <div class="impressum-section">
+            <h2>Angaben gemäß § 5 TMG</h2>
+            <p>Stern Sauber Service GmbH<br>
+            [Straße Nr.]<br>
+            [PLZ] [Stadt]</p>
+        </div>
+
+        <div class="impressum-section">
+            <h2>Vertreten durch</h2>
+            <p>Geschäftsführer: [Name]</p>
+        </div>
+
+        <div class="impressum-section">
+            <h2>Kontakt</h2>
+            <p>Telefon: 015561398670<br>
+            E-Mail: tasginaslan636@gmail.com</p>
+        </div>
+
+        <div class="impressum-section">
+            <h2>Registereintrag</h2>
+            <p>Eintragung im Handelsregister<br>
+            Registergericht: [Stadt]<br>
+            Registernummer: [HRB XXXXX]</p>
+        </div>
+
+        <div class="impressum-section">
+            <h2>Umsatzsteuer-ID</h2>
+            <p>Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz:<br>
+            [DE XXXXXXXXX]</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Stern Sauber Service GmbH</p>
+        <p>Ihr Partner für professionelle Reinigung</p>
+        <p>
+            <a href="impressum.html" class="impressum-link">Impressum</a>
+            <span style="color: white;">|</span>
+            <span>&copy; 2025 Alle Rechte vorbehalten</span>
+        </p>
+    </footer>
+</body>
+</html>
